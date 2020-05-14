@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="index">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="register" class="com.lithan.strutssruddemo.action.RegisterAction">
+			<result name="success">/success.jsp</result>
+		</action>
+		<action name="viewall" class="com.lithan.strutssruddemo.action.ViewAllAction">
+			<result name="result">/viewall.jsp</result>
+		</action>
+		<action name="delete" class="com.lithan.strutssruddemo.action.DeleteAction">
+			<result name="result">/success.jsp</result>
+		</action>
+	</package>
+</struts>
